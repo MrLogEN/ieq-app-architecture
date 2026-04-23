@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="IEQ App" id="id-e793ba0c4d1048ad9af692f0e3a0a3a0" version="5.0.0">
   <folder name="Strategy" id="id-ca9949279472435e927f2c419265a25d" type="strategy"/>
-  <folder name="Business" id="id-a4b9cb14d0e24113bb491afa61f316c9" type="business"/>
+  <folder name="Business" id="id-a4b9cb14d0e24113bb491afa61f316c9" type="business">
+    <element xsi:type="archimate:BusinessFunction" name="Business Function" id="id-13b2c5976b7540e0bab0af6922348f3a"/>
+    <element xsi:type="archimate:BusinessActor" name="Publikující uživatel" id="id-09cca7bdd74d4251a9f2f0f60cc7ce43"/>
+    <element xsi:type="archimate:BusinessActor" name="Konzumující uživatel" id="id-43eee2da57884accb19ba1557656acaa"/>
+    <element xsi:type="archimate:BusinessInterface" name="Business Interface" id="id-43ce825268d34dc498cdd62c06beafbc"/>
+    <element xsi:type="archimate:BusinessRole" name="Business Role" id="id-9df1caaf911a4833b4fd8baa521825a5"/>
+    <element xsi:type="archimate:BusinessRole" name="Producent dat" id="id-ced2aac5e99446cb9e65f590ca16be15"/>
+    <element xsi:type="archimate:BusinessRole" name="Konzument dat" id="id-2f4a75395da04c9fb0b41acdb68b30be"/>
+    <element xsi:type="archimate:BusinessRole" name="Prohlížitel dat" id="id-762fde9b56394fb29fdaeff2087a4ae5"/>
+    <element xsi:type="archimate:BusinessRole" name="Správce systému" id="id-0ec358c3f2f34abd86930fc2c9b87278"/>
+  </folder>
   <folder name="Application" id="id-7e4ec267d836411799b6194fc50401c3" type="application"/>
   <folder name="Technology &amp; Physical" id="id-719df6b698bc43f6bdfdd46e27a7ed3b" type="technology"/>
   <folder name="Motivation" id="id-d6f3dce43fb84b15ac2d1f314c0c87bc" type="motivation"/>
@@ -9,6 +19,19 @@
   <folder name="Other" id="id-de17f651628741529b4864772f3307bc" type="other"/>
   <folder name="Relations" id="id-5f5b162060bc429d9ecae60e389d5d0b" type="relations"/>
   <folder name="Views" id="id-89a02234429c407dbc3a8deae555a8da" type="diagrams">
-    <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-1ca1793e4b0f4f5ab13ef09d2e3313fa"/>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-1ca1793e4b0f4f5ab13ef09d2e3313fa">
+      <child xsi:type="archimate:DiagramObject" id="id-723090d3281c43a088b8a1ff42615043" archimateElement="id-ced2aac5e99446cb9e65f590ca16be15">
+        <bounds x="108" y="156" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-4b4f7cfe0646463c9172cc4e0897afbf" archimateElement="id-2f4a75395da04c9fb0b41acdb68b30be">
+        <bounds x="276" y="156" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-168f012267cb46789d100ead53114df6" archimateElement="id-762fde9b56394fb29fdaeff2087a4ae5">
+        <bounds x="444" y="156" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-7a75b444317b40949bc589423e8caedc" archimateElement="id-0ec358c3f2f34abd86930fc2c9b87278">
+        <bounds x="612" y="156" width="120" height="55"/>
+      </child>
+    </element>
   </folder>
 </archimate:model>
