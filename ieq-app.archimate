@@ -7,30 +7,47 @@
     <element xsi:type="archimate:BusinessActor" name="Konzumující uživatel" id="id-43eee2da57884accb19ba1557656acaa"/>
     <element xsi:type="archimate:BusinessInterface" name="Business Interface" id="id-43ce825268d34dc498cdd62c06beafbc"/>
     <element xsi:type="archimate:BusinessRole" name="Business Role" id="id-9df1caaf911a4833b4fd8baa521825a5"/>
-    <element xsi:type="archimate:BusinessRole" name="Producent dat" id="id-ced2aac5e99446cb9e65f590ca16be15"/>
-    <element xsi:type="archimate:BusinessRole" name="Konzument dat" id="id-2f4a75395da04c9fb0b41acdb68b30be"/>
-    <element xsi:type="archimate:BusinessRole" name="Prohlížitel dat" id="id-762fde9b56394fb29fdaeff2087a4ae5"/>
+    <element xsi:type="archimate:BusinessRole" name="Producent dat" id="id-ced2aac5e99446cb9e65f590ca16be15">
+      <documentation>Uživatel, který poskytuje data o IEQ.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name=" Strojový konzument dat" id="id-2f4a75395da04c9fb0b41acdb68b30be">
+      <documentation>Konzumentem dat je uživatel, který data ze systému získává a dále strojově zpracovává.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Prohlížitel dat" id="id-762fde9b56394fb29fdaeff2087a4ae5">
+      <documentation>Prohlížitel interaguje se systémem pouze povrchně. Jeho role spočívá jen v prohlížení dat bez jakéhokoliv </documentation>
+    </element>
     <element xsi:type="archimate:BusinessRole" name="Správce systému" id="id-0ec358c3f2f34abd86930fc2c9b87278"/>
+    <element xsi:type="archimate:BusinessRole" name="Konzument dat" id="id-d779ad29080d430d9bf0c0fd01aa2844"/>
+    <element xsi:type="archimate:Product" name="Archiv" id="id-20e8071587c44d3c89955e227af23386"/>
+    <element xsi:type="archimate:Product" name="Product" id="id-80c650cdce4a44358634e64654509908"/>
   </folder>
   <folder name="Application" id="id-7e4ec267d836411799b6194fc50401c3" type="application"/>
   <folder name="Technology &amp; Physical" id="id-719df6b698bc43f6bdfdd46e27a7ed3b" type="technology"/>
   <folder name="Motivation" id="id-d6f3dce43fb84b15ac2d1f314c0c87bc" type="motivation"/>
   <folder name="Implementation &amp; Migration" id="id-c6289f004e224b2f9667e260d79d8922" type="implementation_migration"/>
   <folder name="Other" id="id-de17f651628741529b4864772f3307bc" type="other"/>
-  <folder name="Relations" id="id-5f5b162060bc429d9ecae60e389d5d0b" type="relations"/>
+  <folder name="Relations" id="id-5f5b162060bc429d9ecae60e389d5d0b" type="relations">
+    <element xsi:type="archimate:SpecializationRelationship" id="id-5113456a3d0c4adebea9870cec2f1c2a" source="id-2f4a75395da04c9fb0b41acdb68b30be" target="id-d779ad29080d430d9bf0c0fd01aa2844"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="id-38db0b5eb29e421cb43f81a6937ba4ae" source="id-762fde9b56394fb29fdaeff2087a4ae5" target="id-d779ad29080d430d9bf0c0fd01aa2844"/>
+  </folder>
   <folder name="Views" id="id-89a02234429c407dbc3a8deae555a8da" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-1ca1793e4b0f4f5ab13ef09d2e3313fa">
       <child xsi:type="archimate:DiagramObject" id="id-723090d3281c43a088b8a1ff42615043" archimateElement="id-ced2aac5e99446cb9e65f590ca16be15">
         <bounds x="108" y="156" width="120" height="55"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="id-4b4f7cfe0646463c9172cc4e0897afbf" archimateElement="id-2f4a75395da04c9fb0b41acdb68b30be">
-        <bounds x="276" y="156" width="120" height="55"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="id-168f012267cb46789d100ead53114df6" archimateElement="id-762fde9b56394fb29fdaeff2087a4ae5">
-        <bounds x="444" y="156" width="120" height="55"/>
-      </child>
       <child xsi:type="archimate:DiagramObject" id="id-7a75b444317b40949bc589423e8caedc" archimateElement="id-0ec358c3f2f34abd86930fc2c9b87278">
-        <bounds x="612" y="156" width="120" height="55"/>
+        <bounds x="672" y="156" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-86ee758547674a63991e25971ca11d06" targetConnections="id-e2b621180b0d48dd9da0091747ba40bc id-80ed2b4500c04a859ff4890407279168" archimateElement="id-d779ad29080d430d9bf0c0fd01aa2844">
+        <bounds x="312" y="88" width="289" height="123"/>
+        <child xsi:type="archimate:DiagramObject" id="id-4b4f7cfe0646463c9172cc4e0897afbf" archimateElement="id-2f4a75395da04c9fb0b41acdb68b30be">
+          <bounds x="12" y="48" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e2b621180b0d48dd9da0091747ba40bc" source="id-4b4f7cfe0646463c9172cc4e0897afbf" target="id-86ee758547674a63991e25971ca11d06" archimateRelationship="id-5113456a3d0c4adebea9870cec2f1c2a"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-168f012267cb46789d100ead53114df6" archimateElement="id-762fde9b56394fb29fdaeff2087a4ae5">
+          <bounds x="156" y="48" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-80ed2b4500c04a859ff4890407279168" source="id-168f012267cb46789d100ead53114df6" target="id-86ee758547674a63991e25971ca11d06" archimateRelationship="id-38db0b5eb29e421cb43f81a6937ba4ae"/>
+        </child>
       </child>
     </element>
   </folder>
