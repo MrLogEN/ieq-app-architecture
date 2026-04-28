@@ -5,45 +5,51 @@
   <folder name="Application" id="id-7e4ec267d836411799b6194fc50401c3" type="application"/>
   <folder name="Technology &amp; Physical" id="id-719df6b698bc43f6bdfdd46e27a7ed3b" type="technology"/>
   <folder name="Motivation" id="id-d6f3dce43fb84b15ac2d1f314c0c87bc" type="motivation">
-    <element xsi:type="archimate:Stakeholder" name="Obyvatel budovy" id="id-4ab5edefc1804e00b9673f516752ef49">
-      <documentation>Osoba trávící čas v monitorovaném prostoru; zájem: znát aktuální a historický stav kvality vnitřního prostředí.</documentation>
-    </element>
-    <element xsi:type="archimate:Stakeholder" name="Výzkumný pracovník" id="id-7631466ffb364d098cc8aa85f6514e2e">
-      <documentation>Akademik nebo vědec využívající otevřená IEQ data pro výzkum vlivu prostředí na zdraví a produktivitu.</documentation>
-    </element>
-    <element xsi:type="archimate:Stakeholder" name="Správce budovy" id="id-75ccbd691e5a4b1eb4da257dd0ecaa12">
-      <documentation>Osoba zodpovědná za provoz a údržbu budovy; zájem: monitoring prostředí a sledování historických trendů IEQ.</documentation>
-    </element>
-    <element xsi:type="archimate:Stakeholder" name="Vývojář třetí strany" id="id-f9c1b143bee74dbf8751dcbc7ac5cbce">
-      <documentation>Vývojář integrující se přes API; zájem: stabilní, verzované a zdokumentované rozhraní umožňující spolehlivou integraci.</documentation>
-    </element>
-    <element xsi:type="archimate:Stakeholder" name="Výrobce HVAC" id="id-2dad762adf7c48029fe5100e9890e475">
-      <documentation>Výrobce topných, ventilačních a klimatizačních systémů; zájem: reálná data pro vývoj a optimalizaci produktů.</documentation>
-    </element>
-    <element xsi:type="archimate:Driver" name="Dopad IEQ na zdraví a produktivitu" id="id-637200b0ec7a432bb2861adf890af35b">
-      <documentation>Znečištění vnitřního ovzduší přispívá k předčasným úmrtím a snižuje pracovní výkonnost; motivuje ke sběru a sdílení IEQ dat.</documentation>
-    </element>
-    <element xsi:type="archimate:Driver" name="Nedostupnost standardizovaných otevřených IEQ dat" id="id-757962516f9243c1b876ba623579a580">
-      <documentation>V České republice chybí veřejná, strojově čitelná a standardizovaná datová platforma pro IEQ umožňující opakované použití.</documentation>
-    </element>
-    <element xsi:type="archimate:Driver" name="Fragmentovanost trhu IoT senzorů" id="id-f69b3e0d367d4ed5924171f71fa2d7c7">
-      <documentation>Různí výrobci používají nekompatibilní protokoly a datové formáty; bez jednotného rozhraní je integrace senzorů nákladná.</documentation>
-    </element>
-    <element xsi:type="archimate:Driver" name="Trend otevřených dat" id="id-4533d015a3ab45f783bcefc0dfdeeca8">
-      <documentation>Evropská (EU Open Data Directive) a česká legislativa prosazují publikaci dat jako otevřených a strojově čitelných.</documentation>
-    </element>
-    <element xsi:type="archimate:Assessment" name="Absence formálního datového modelu pro IEQ" id="id-8fd77d1627b849fda6c9105c9c484e21">
-      <documentation>Neexistuje standardizovaný otevřený datový model pro publikaci IEQ měření kompatibilní s DCAT-AP a OFN.</documentation>
-    </element>
-    <element xsi:type="archimate:Assessment" name="Projekt nesplňuje podmínky NKOD a DCAT-AP-CZ" id="id-d1d6599acaec412b8ffb579344919720">
-      <documentation>Projekt není orgánem veřejné moci, takže registrace v NKOD a plná implementace DCAT-AP-CZ jsou nerealizovatelné.</documentation>
-    </element>
-    <element xsi:type="archimate:Assessment" name="Existující IEQ jsou OFN nekonformní" id="id-185cecf2ee8d40bf9dcb7d8724cbed12">
-      <documentation>Čistě IEQ (open source) řešení se na trhu vůbec nevyskutuje. Existují řešení podporující určité parametry IEQ, ale o těchto řešeních lze říci, že nejsou zcela konformní s OFN a tedy zákonem 106/1999 Sb.</documentation>
-    </element>
-    <element xsi:type="archimate:Assessment" name="Fyzikální veličiny jsou objektivně měřitelné" id="id-b9e20240f2154bf0a1b3e6d05fd012d6">
-      <documentation>TODO: doplnit veličiny</documentation>
-    </element>
+    <folder name="Stakeholders" id="id-a83e4817d71e4c1c83b8a96fe7dab1f2">
+      <element xsi:type="archimate:Stakeholder" name="Obyvatel budovy" id="id-4ab5edefc1804e00b9673f516752ef49">
+        <documentation>Osoba trávící čas v monitorovaném prostoru; zájem: znát aktuální a historický stav kvality vnitřního prostředí.</documentation>
+      </element>
+      <element xsi:type="archimate:Stakeholder" name="Správce budovy" id="id-75ccbd691e5a4b1eb4da257dd0ecaa12">
+        <documentation>Osoba zodpovědná za provoz a údržbu budovy; zájem: monitoring prostředí a sledování historických trendů IEQ.</documentation>
+      </element>
+      <element xsi:type="archimate:Stakeholder" name="Výrobce HVAC" id="id-2dad762adf7c48029fe5100e9890e475">
+        <documentation>Výrobce topných, ventilačních a klimatizačních systémů; zájem: reálná data pro vývoj a optimalizaci produktů.</documentation>
+      </element>
+      <element xsi:type="archimate:Stakeholder" name="Vývojář třetí strany" id="id-f9c1b143bee74dbf8751dcbc7ac5cbce">
+        <documentation>Vývojář integrující se přes API; zájem: stabilní, verzované a zdokumentované rozhraní umožňující spolehlivou integraci.</documentation>
+      </element>
+      <element xsi:type="archimate:Stakeholder" name="Výzkumný pracovník" id="id-7631466ffb364d098cc8aa85f6514e2e">
+        <documentation>Akademik nebo vědec využívající otevřená IEQ data pro výzkum vlivu prostředí na zdraví a produktivitu.</documentation>
+      </element>
+    </folder>
+    <folder name="Drivers" id="id-ab8466e8d9f247ce9ee0182f3073ba95">
+      <element xsi:type="archimate:Driver" name="Dopad IEQ na zdraví a produktivitu" id="id-637200b0ec7a432bb2861adf890af35b">
+        <documentation>Znečištění vnitřního ovzduší přispívá k předčasným úmrtím a snižuje pracovní výkonnost; motivuje ke sběru a sdílení IEQ dat.</documentation>
+      </element>
+      <element xsi:type="archimate:Driver" name="Fragmentovanost trhu IoT senzorů" id="id-f69b3e0d367d4ed5924171f71fa2d7c7">
+        <documentation>Různí výrobci používají nekompatibilní protokoly a datové formáty; bez jednotného rozhraní je integrace senzorů nákladná.</documentation>
+      </element>
+      <element xsi:type="archimate:Driver" name="Nedostupnost standardizovaných otevřených IEQ dat" id="id-757962516f9243c1b876ba623579a580">
+        <documentation>V České republice chybí veřejná, strojově čitelná a standardizovaná datová platforma pro IEQ umožňující opakované použití.</documentation>
+      </element>
+      <element xsi:type="archimate:Driver" name="Trend otevřených dat" id="id-4533d015a3ab45f783bcefc0dfdeeca8">
+        <documentation>Evropská (EU Open Data Directive) a česká legislativa prosazují publikaci dat jako otevřených a strojově čitelných.</documentation>
+      </element>
+    </folder>
+    <folder name="Assessments" id="id-8c82a147acb140098fb693e11925b5de">
+      <element xsi:type="archimate:Assessment" name="Absence formálního datového modelu pro IEQ" id="id-8fd77d1627b849fda6c9105c9c484e21">
+        <documentation>Neexistuje standardizovaný otevřený datový model pro publikaci IEQ měření kompatibilní s DCAT-AP a OFN.</documentation>
+      </element>
+      <element xsi:type="archimate:Assessment" name="Existující IEQ jsou OFN nekonformní" id="id-185cecf2ee8d40bf9dcb7d8724cbed12">
+        <documentation>Čistě IEQ (open source) řešení se na trhu vůbec nevyskutuje. Existují řešení podporující určité parametry IEQ, ale o těchto řešeních lze říci, že nejsou zcela konformní s OFN a tedy zákonem 106/1999 Sb.</documentation>
+      </element>
+      <element xsi:type="archimate:Assessment" name="Fyzikální veličiny jsou objektivně měřitelné" id="id-b9e20240f2154bf0a1b3e6d05fd012d6">
+        <documentation>TODO: doplnit veličiny</documentation>
+      </element>
+      <element xsi:type="archimate:Assessment" name="Projekt nesplňuje podmínky NKOD a DCAT-AP-CZ" id="id-d1d6599acaec412b8ffb579344919720">
+        <documentation>Projekt není orgánem veřejné moci, takže registrace v NKOD a plná implementace DCAT-AP-CZ jsou nerealizovatelné.</documentation>
+      </element>
+    </folder>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-c6289f004e224b2f9667e260d79d8922" type="implementation_migration"/>
   <folder name="Other" id="id-de17f651628741529b4864772f3307bc" type="other"/>
