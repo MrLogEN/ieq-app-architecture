@@ -161,6 +161,31 @@
           <documentation>Externí zařízení musí být integrována přes převod na jednotné aplikační rozhraní, bez závislosti na jediném výrobci nebo typu senzoru.</documentation>
         </element>
       </folder>
+      <folder name="Standards" id="id-cac653432afd4b3ba96d887a6cf41c7a">
+        <documentation>Publikovaná data musí být dostupná v otevřeném a strojově čitelném formátu; preferován je JSON-LD, alternativně CSV v kódování UTF-8. Proprietární formáty se nepoužijí.</documentation>
+        <element xsi:type="archimate:Requirement" name="STA01 Otevřené formáty dat" id="id-7235443003154747b2a890be3f2f797c"/>
+        <element xsi:type="archimate:Requirement" name="STA02 Metadata dle DCAT-AP 3.07" id="id-8ac1fd94175448d9a2029eca49ab8649">
+          <documentation>Metadata datasetů, distribucí a datových služeb musí odpovídat specifikaci DCAT-AP 3.0 v rozsahu relevantním pro projekt.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="STA03 Otevřená licence dat" id="id-1b3c7075096648f4b6b3ac18065f6e94">
+          <documentation>Každý dataset musí mít explicitně uvedenou otevřenou licenci umožňující opakované použití; preferována je CC BY 4.0.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="STA04 OFN pro umístění" id="id-d484f4ca15094435af579aa77a539898">
+          <documentation>Poloha měřicích bodů musí být publikována jako geometrický objekt podle OFN pro umístění, nikoli jen jako dvojice atributů zeměpisné šířky a délky.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="STA05 OFN pro čas" id="id-fb939287788447a5870ae16ed638a5eb">
+          <documentation>Časové údaje musí být zapisovány podle OFN pro časovou specifikaci ve formátu ISO 8601 včetně časové zóny.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="STA06 OFN pro datové typy" id="id-3e190e7550bc4e53925187ea4db1f8b0">
+          <documentation>Číselné veličiny musí být publikovány jako číselné datové typy, nikoli jako textové řetězce; ostatní hodnoty musí respektovat odpovídající základní datové typy OFN.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="STA07 Formální schéma dat" id="id-c604f09189724afe9f5bedc2600017b2">
+          <documentation>Pro publikovaná data musí existovat formální schéma (JSON Schema nebo schéma pro CSV) umožňující automatizovanou validaci.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="STA08 Verzované JSON-LD kontexty" id="id-4c0b64be36844494a995531a78a30d5c">
+          <documentation>Každý publikovaný JSON-LD kontext musí mít stabilní verzované IRI; nekompatibilní změna významu termínů vyžaduje novou verzi kontextu.</documentation>
+        </element>
+      </folder>
     </folder>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-c6289f004e224b2f9667e260d79d8922" type="implementation_migration"/>
@@ -300,6 +325,31 @@
       <child xsi:type="archimate:DiagramObject" id="id-5f183889c1424b90bba19ea3ab6d3740" archimateElement="id-ef67fca0e9614d9aa034d04577dab8cd">
         <bounds x="576" y="1164" width="120" height="55"/>
       </child>
+      <child xsi:type="archimate:DiagramObject" id="id-a01c02be0cc94b60b0f949c6e4663287" archimateElement="id-7235443003154747b2a890be3f2f797c">
+        <bounds x="85" y="1248" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-6bb686490a834e7e9d861364aebd750c" archimateElement="id-8ac1fd94175448d9a2029eca49ab8649">
+        <bounds x="248" y="1248" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-b27d8a4421ae4d6780995f6aa960e028" archimateElement="id-1b3c7075096648f4b6b3ac18065f6e94">
+        <bounds x="412" y="1248" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-85dcc4a37b2a4dda845d0bf2204e5a7d" archimateElement="id-d484f4ca15094435af579aa77a539898">
+        <bounds x="576" y="1248" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-5ad0f1a3df404d3c99da7abb18592e7e" archimateElement="id-fb939287788447a5870ae16ed638a5eb">
+        <bounds x="731" y="1248" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-5ea8e6f46a1d4026be04440042f83e70" archimateElement="id-3e190e7550bc4e53925187ea4db1f8b0">
+        <bounds x="876" y="1248" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-16fc641d5dcc49f89ddedf535eb94594" archimateElement="id-c604f09189724afe9f5bedc2600017b2">
+        <bounds x="1020" y="1248" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-ed6f0a2ddf7a483b8b1dfb128d28c9f1" archimateElement="id-4c0b64be36844494a995531a78a30d5c">
+        <bounds x="1176" y="1248" width="120" height="55"/>
+      </child>
+      <documentation>Publikovaná data musí být dostupná v otevřeném a strojově čitelném formátu; preferován je JSON-LD, alternativně CSV v kódování UTF-8. Proprietární formáty se nepoužijí.</documentation>
     </element>
   </folder>
 </archimate:model>
