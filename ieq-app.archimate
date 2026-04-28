@@ -88,6 +88,7 @@
     </folder>
     <folder name="Requirements" id="id-eb5651c0da094ef6a9932a88c9eb2df8">
       <folder name="Functional" id="id-26474508626c424fbdb62c4746b2541c">
+        <documentation>Funční požadavky aplikace</documentation>
         <element xsi:type="archimate:Requirement" name="F01 Kompletní veličiny IEQ" id="id-29e96262ecf14c1c9166a2b81ce95cf5">
           <documentation>Systém musí evidovat a publikovat minimálně data veličin CO₂, PM₂.₅, PM₁₀, TVOC, teploty, relativní vlhkosti, rychlosti proudění vzduchu, osvětlenosti a hladiny akustického tlaku; je-li měření dostupné, také CCT, NO₂, SO₂, CO a O₃.</documentation>
         </element>
@@ -108,6 +109,15 @@
         </element>
         <element xsi:type="archimate:Requirement" name="F07 Evidence metadat senzoru" id="id-99b2a7c769684ebda01740708bdbae0c">
           <documentation>Systém musí u měřicího bodu zveřejňovat model senzoru, podporované veličiny a dostupné údaje o přesnosti nebo charakteru měření.</documentation>
+        </element>
+      </folder>
+      <folder name="Usability" id="id-dec76ec2dba34a9389ebb5e3534c5688">
+        <documentation>Nefunční požadaveky použitelnosti</documentation>
+        <element xsi:type="archimate:Requirement" name="POU01 Jednotné názvy veličin" id="id-bcab18103933480d9db52606cb2b693d">
+          <documentation>Stejná veličina musí být v uživatelském rozhraní i exportech vždy označena stejným názvem, značkou a jednotkou.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="POU02 Přístup přes webový prohlížeč" id="id-c3d5f9a8494b49dba52bb9a2857921ed">
+          <documentation>Primární uživatelské rozhraní musí být plně použitelné v běžném moderním webovém prohlížeči bez instalace specializovaného klienta.</documentation>
         </element>
       </folder>
     </folder>
@@ -206,6 +216,12 @@
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-91944d9fbd4748438fcbd3a8631313c9" archimateElement="id-b41506c2c63f455ba40618d40b3a7050">
         <bounds x="744" y="708" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-af7fed829be04afeafd3b3024d6607d0" archimateElement="id-bcab18103933480d9db52606cb2b693d">
+        <bounds x="85" y="804" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-cdd652899ab14548958c625912a0c3eb" archimateElement="id-c3d5f9a8494b49dba52bb9a2857921ed">
+        <bounds x="240" y="804" width="120" height="55"/>
       </child>
     </element>
   </folder>
