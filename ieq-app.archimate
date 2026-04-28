@@ -61,6 +61,17 @@
         <documentation>Metadatový model, formáty a licence musí odpovídat specifikaci DCAT-AP 3.0 a relevantním OFN.</documentation>
       </element>
     </folder>
+    <folder name="Outcomes" id="id-bef87abe4d3941188088d27f82475b99">
+      <element xsi:type="archimate:Outcome" name="Veřejně dostupný dataset IEQ měření" id="id-70a3d301b84e46d59f1c3773f84f6efc">
+        <documentation>Otevřený dataset přístupný přes čtecí REST API a archivní exporty ke stažení; opakovaně použitelný bez registrace.</documentation>
+      </element>
+      <element xsi:type="archimate:Outcome" name="Znovupoužitelný open-source kód" id="id-0602a0ed7b884636b7af5b68370407a1">
+        <documentation>Zdrojový kód uveřejněný ve veřejném repozitáři pod open-source licencí umožňující komunitní rozvoj a adaptaci.</documentation>
+      </element>
+      <element xsi:type="archimate:Outcome" name="Standardizovaný a validovatelný datový model" id="id-0c5fffea612c45468bfd9f715acfbb63">
+        <documentation>Formální schéma dat (JSON Schema) a verzované JSON-LD kontexty zajišťující sémantickou interoperabilitu a automatizovanou validaci.</documentation>
+      </element>
+    </folder>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-c6289f004e224b2f9667e260d79d8922" type="implementation_migration"/>
   <folder name="Other" id="id-de17f651628741529b4864772f3307bc" type="other"/>
@@ -68,52 +79,61 @@
   <folder name="Views" id="id-89a02234429c407dbc3a8deae555a8da" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-1ca1793e4b0f4f5ab13ef09d2e3313fa">
       <child xsi:type="archimate:DiagramObject" id="id-848bc6c2cde045c79e5fc64af41a01ae" archimateElement="id-4ab5edefc1804e00b9673f516752ef49">
-        <bounds x="96" y="132" width="120" height="55"/>
+        <bounds x="85" y="132" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-7b60a05bc09e4c1aaec4c289b5e328b9" archimateElement="id-7631466ffb364d098cc8aa85f6514e2e">
-        <bounds x="252" y="132" width="120" height="55"/>
+        <bounds x="300" y="132" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-444ab9065f51468ea5d49fb4d995c218" archimateElement="id-75ccbd691e5a4b1eb4da257dd0ecaa12">
-        <bounds x="408" y="132" width="120" height="55"/>
+        <bounds x="528" y="132" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-7f5ea4aff26a40829e845b8c7cc39e19" archimateElement="id-f9c1b143bee74dbf8751dcbc7ac5cbce">
-        <bounds x="564" y="132" width="120" height="55"/>
+        <bounds x="744" y="132" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-6f36a75f8d9a4c46a0c605e7da21c15f" archimateElement="id-2dad762adf7c48029fe5100e9890e475">
-        <bounds x="708" y="132" width="120" height="55"/>
+        <bounds x="948" y="132" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-e88cbb20bdbe455fba2eb1f3ef9b5c13" archimateElement="id-637200b0ec7a432bb2861adf890af35b">
-        <bounds x="96" y="240" width="120" height="55"/>
+        <bounds x="85" y="240" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-adabca8714e94addba16a8180ceff995" archimateElement="id-757962516f9243c1b876ba623579a580">
-        <bounds x="240" y="232" width="163" height="72"/>
+        <bounds x="300" y="223" width="163" height="72"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-864f8e1fde69499c976094f77e185635" archimateElement="id-f69b3e0d367d4ed5924171f71fa2d7c7">
-        <bounds x="432" y="240" width="150" height="55"/>
+        <bounds x="528" y="240" width="150" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-fdff2e763b1c45239e45b50670e4197d" archimateElement="id-4533d015a3ab45f783bcefc0dfdeeca8">
-        <bounds x="600" y="240" width="120" height="55"/>
+        <bounds x="744" y="240" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-88a52990c7ab41b7b30a23cf09fcd27e" archimateElement="id-8fd77d1627b849fda6c9105c9c484e21">
-        <bounds x="72" y="345" width="168" height="72"/>
+        <bounds x="85" y="336" width="168" height="72"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-3f900a9b10024072993c78acc04f3b05" archimateElement="id-d1d6599acaec412b8ffb579344919720">
-        <bounds x="264" y="348" width="192" height="66"/>
+        <bounds x="300" y="342" width="192" height="66"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-7d20834898174daeaf9a7da38fa1c75a" archimateElement="id-185cecf2ee8d40bf9dcb7d8724cbed12">
-        <bounds x="492" y="354" width="142" height="54"/>
+        <bounds x="528" y="354" width="142" height="54"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-e38de82ba4c342b99230eaeea5111673" archimateElement="id-b9e20240f2154bf0a1b3e6d05fd012d6">
-        <bounds x="660" y="353" width="120" height="55"/>
+        <bounds x="744" y="353" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-f60ff58756cc47f198aa80dd95a7f959" archimateElement="id-bbe48089735c4b458c05bf61634f5a2d">
-        <bounds x="72" y="456" width="145" height="55"/>
+        <bounds x="85" y="451" width="145" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-17e425a1cfb0489b9c8d8cd01185f346" archimateElement="id-ee7fe8ab70f140d988d5702167b1541e">
-        <bounds x="243" y="446" width="158" height="65"/>
+        <bounds x="300" y="441" width="158" height="65"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-faa8b5f669734823897de2aec549c523" archimateElement="id-025fc793b7f34570a2b07eb8ce87b10b">
-        <bounds x="444" y="446" width="169" height="60"/>
+        <bounds x="528" y="446" width="169" height="60"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-9e77efff8ee04300a4e7dbd7ee9bd9b2" archimateElement="id-70a3d301b84e46d59f1c3773f84f6efc">
+        <bounds x="85" y="540" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-9f2c0a13619f493f97fdd7d237f7db7d" archimateElement="id-0602a0ed7b884636b7af5b68370407a1">
+        <bounds x="300" y="540" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-e63c9e9ded9d45029dc1061f3ddffeeb" archimateElement="id-0c5fffea612c45468bfd9f715acfbb63">
+        <bounds x="528" y="540" width="169" height="55"/>
       </child>
     </element>
   </folder>
