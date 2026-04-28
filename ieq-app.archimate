@@ -201,6 +201,17 @@
         </element>
       </folder>
     </folder>
+    <folder name="Constraints" id="id-48fd1ad40aa2438982f03907aa59e94e">
+      <element xsi:type="archimate:Constraint" name="Projekt není orgánem veřejné moci" id="id-03c57758cf1e4175a42c723cd2dc515b">
+        <documentation>Řešení nesmí být závislé na registraci v NKOD ani na implementaci DCAT-AP-CZ, protože projekt není orgánem veřejné moci ve smyslu zákona č. 106/1999 Sb. (SYS01, SYS02).</documentation>
+      </element>
+      <element xsi:type="archimate:Constraint" name="Rozsah omezen na objektivně měřitelné faktory IEQ" id="id-b69f27165924411488538d146197b229">
+        <documentation>Systém eviduje výhradně faktory IEQ, které lze rozumně získat senzoricky; subjektivní veličiny (soukromí, výhled, design budovy) jsou mimo rozsah (SYS03).</documentation>
+      </element>
+      <element xsi:type="archimate:Constraint" name="Omezení zdrojů akademické práce" id="id-61200401171e491abc665e352fbbf502">
+        <documentation>Dostupné časové a finanční zdroje jsou omezeny rámcem bakalářské práce; volba technologií a rozsah implementace tomu odpovídají.</documentation>
+      </element>
+    </folder>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-c6289f004e224b2f9667e260d79d8922" type="implementation_migration"/>
   <folder name="Other" id="id-de17f651628741529b4864772f3307bc" type="other"/>
@@ -374,6 +385,15 @@
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-72007515e2e249cba14af16dd1870732" archimateElement="id-cd09bbb8e46c4244949854b0eccd1c85">
         <bounds x="576" y="1332" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-17865eb1e351439689956f0bae8b1bd4" archimateElement="id-03c57758cf1e4175a42c723cd2dc515b">
+        <bounds x="84" y="1428" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-1e594c5be69441b99d730f435ab29c1c" archimateElement="id-b69f27165924411488538d146197b229">
+        <bounds x="239" y="1428" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-6c25d603f06b410bbd968bdcfd0496fc" archimateElement="id-61200401171e491abc665e352fbbf502">
+        <bounds x="409" y="1428" width="120" height="55"/>
       </child>
       <documentation>Publikovaná data musí být dostupná v otevřeném a strojově čitelném formátu; preferován je JSON-LD, alternativně CSV v kódování UTF-8. Proprietární formáty se nepoužijí.</documentation>
     </element>
