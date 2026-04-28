@@ -148,6 +148,19 @@
           <documentation>Napojení nového zařízení musí být možné bez změny významu stávajících veličin a bez porušení kompatibility publikovaných dat.</documentation>
         </element>
       </folder>
+      <folder name="Interface" id="id-989c28c4222b4da2a0855c85cb66ff76">
+        <documentation>Systém musí přijímat měření přes verzované HTTPS REST API se strojově čitelným formátem JSON; nekompatibilní změna vyžaduje novou verzi rozhraní.</documentation>
+        <element xsi:type="archimate:Requirement" name="ROZ01 Verzované vstupní REST API" id="id-2da0183df8c246f9b540c546e03a33ae"/>
+        <element xsi:type="archimate:Requirement" name="ROZ02 Verzované čtecí REST API" id="id-730d9ffc18524e1993b3d57a86fc9954">
+          <documentation>Systém musí poskytovat veřejné čtecí verzované REST API přes HTTPS a JSON bez nutnosti registrace nebo API klíče pro čtení.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="ROZ03 Archivní export přes HTTPS" id="id-4b64fc8d31ee4387a7a2bf1b31756008">
+          <documentation>Systém musí zpřístupňovat archivní exporty dat ke stažení přes HTTPS v otevřeném formátu určeném pro opakované použití.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="ROZ04 Integrace různých zařízení" id="id-ef67fca0e9614d9aa034d04577dab8cd">
+          <documentation>Externí zařízení musí být integrována přes převod na jednotné aplikační rozhraní, bez závislosti na jediném výrobci nebo typu senzoru.</documentation>
+        </element>
+      </folder>
     </folder>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-c6289f004e224b2f9667e260d79d8922" type="implementation_migration"/>
@@ -274,6 +287,18 @@
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-3d9350b0a7e540beb6c41e5f0d239237" archimateElement="id-499b68fe5709479b8f43a25eed094863">
         <bounds x="413" y="1068" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-5c522701afac41cd8a8e30fc052392e5" archimateElement="id-2da0183df8c246f9b540c546e03a33ae">
+        <bounds x="85" y="1164" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-fbf8302e9e064784b35ac35c5ed9257f" archimateElement="id-730d9ffc18524e1993b3d57a86fc9954">
+        <bounds x="239" y="1164" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-4743d5acd13c4cc5829bd0c732ed48b6" archimateElement="id-4b64fc8d31ee4387a7a2bf1b31756008">
+        <bounds x="409" y="1164" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-5f183889c1424b90bba19ea3ab6d3740" archimateElement="id-ef67fca0e9614d9aa034d04577dab8cd">
+        <bounds x="576" y="1164" width="120" height="55"/>
       </child>
     </element>
   </folder>
