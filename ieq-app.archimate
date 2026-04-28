@@ -223,6 +223,17 @@
         <documentation>Veřejně dostupná a opakovaně použitelná IEQ data posilují informovanost, umožňují nezávislé ověření a zvyšují odpovědnost správců budov.</documentation>
       </element>
     </folder>
+    <folder name="Meanings" id="id-7d3ec43259634dffa12e21aed8417572">
+      <element xsi:type="archimate:Meaning" name="IEQ (Indoor Environment Quality)" id="id-cc96e579f89c4da89518c30d7562009f">
+        <documentation>Souhrn kvality vnitřního ovzduší (IAQ), tepelného, vizuálního a akustického komfortu ve vnitřním prostředí; zahrnuje veličiny měřitelné senzory i pozorovatelné faktory.</documentation>
+      </element>
+      <element xsi:type="archimate:Meaning" name="Katalog (v kontextu práce)" id="id-8031ea01c91a4a03b628acae4f4b8140">
+        <documentation>Vlastní implementace metadatového standardu DCAT-AP 3.0; odlišuje se od NKOD (Národní katalog otevřených dat) a LKOD (Lokální katalog otevřených dat).</documentation>
+      </element>
+      <element xsi:type="archimate:Meaning" name="Otevřená data" id="id-13701320620145eaa0bd15aa5a48da69">
+        <documentation>Data publikovaná v otevřených, strojově čitelných formátech pod otevřenou licencí, volně přístupná bez povinnosti registrace nebo platby.</documentation>
+      </element>
+    </folder>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-c6289f004e224b2f9667e260d79d8922" type="implementation_migration"/>
   <folder name="Other" id="id-de17f651628741529b4864772f3307bc" type="other"/>
@@ -414,6 +425,15 @@
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-418e5eb1b6804a4287f94e680695a356" archimateElement="id-35a34545bf004780a5e2fb46b9deecb1">
         <bounds x="412" y="1512" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-3f522ee47d424ccf9167fa708d4c66d2" archimateElement="id-cc96e579f89c4da89518c30d7562009f">
+        <bounds x="83" y="1596" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-ca8e66fcd83043a69188f4bd211764de" archimateElement="id-8031ea01c91a4a03b628acae4f4b8140">
+        <bounds x="240" y="1596" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-7cb2d93f03e242369f1be0687deae0a2" archimateElement="id-13701320620145eaa0bd15aa5a48da69">
+        <bounds x="409" y="1596" width="120" height="55"/>
       </child>
       <documentation>Publikovaná data musí být dostupná v otevřeném a strojově čitelném formátu; preferován je JSON-LD, alternativně CSV v kódování UTF-8. Proprietární formáty se nepoužijí.</documentation>
     </element>
