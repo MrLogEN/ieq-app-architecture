@@ -32,6 +32,18 @@
     <element xsi:type="archimate:Driver" name="Trend otevřených dat" id="id-4533d015a3ab45f783bcefc0dfdeeca8">
       <documentation>Evropská (EU Open Data Directive) a česká legislativa prosazují publikaci dat jako otevřených a strojově čitelných.</documentation>
     </element>
+    <element xsi:type="archimate:Assessment" name="Absence formálního datového modelu pro IEQ" id="id-8fd77d1627b849fda6c9105c9c484e21">
+      <documentation>Neexistuje standardizovaný otevřený datový model pro publikaci IEQ měření kompatibilní s DCAT-AP a OFN.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Projekt nesplňuje podmínky NKOD a DCAT-AP-CZ" id="id-d1d6599acaec412b8ffb579344919720">
+      <documentation>Projekt není orgánem veřejné moci, takže registrace v NKOD a plná implementace DCAT-AP-CZ jsou nerealizovatelné.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Existující IEQ jsou OFN nekonformní" id="id-185cecf2ee8d40bf9dcb7d8724cbed12">
+      <documentation>Čistě IEQ (open source) řešení se na trhu vůbec nevyskutuje. Existují řešení podporující určité parametry IEQ, ale o těchto řešeních lze říci, že nejsou zcela konformní s OFN a tedy zákonem 106/1999 Sb.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Fyzikální veličiny jsou objektivně měřitelné" id="id-b9e20240f2154bf0a1b3e6d05fd012d6">
+      <documentation>TODO: doplnit veličiny</documentation>
+    </element>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-c6289f004e224b2f9667e260d79d8922" type="implementation_migration"/>
   <folder name="Other" id="id-de17f651628741529b4864772f3307bc" type="other"/>
@@ -64,6 +76,18 @@
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-fdff2e763b1c45239e45b50670e4197d" archimateElement="id-4533d015a3ab45f783bcefc0dfdeeca8">
         <bounds x="600" y="240" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-88a52990c7ab41b7b30a23cf09fcd27e" archimateElement="id-8fd77d1627b849fda6c9105c9c484e21">
+        <bounds x="72" y="345" width="168" height="72"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-3f900a9b10024072993c78acc04f3b05" archimateElement="id-d1d6599acaec412b8ffb579344919720">
+        <bounds x="264" y="348" width="192" height="66"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-7d20834898174daeaf9a7da38fa1c75a" archimateElement="id-185cecf2ee8d40bf9dcb7d8724cbed12">
+        <bounds x="492" y="354" width="142" height="54"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-e38de82ba4c342b99230eaeea5111673" archimateElement="id-b9e20240f2154bf0a1b3e6d05fd012d6">
+        <bounds x="660" y="353" width="120" height="55"/>
       </child>
     </element>
   </folder>
