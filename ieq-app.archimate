@@ -138,6 +138,16 @@
           <documentation>Systém musí zpracovávat nová měření průběžně, bez ručně spouštěného dávkového importu.</documentation>
         </element>
       </folder>
+      <folder name="Supportability" id="id-16ed6f02e4c848cb9bd7739da2317dc9">
+        <documentation>Zdrojový kód aplikace musí být dostupný ve veřejném repozitáři pod licencí kompatibilní s Open Source Definition.</documentation>
+        <element xsi:type="archimate:Requirement" name="POD01 Veřejný repozitář kódu" id="id-869752dcc1244490b8123676afe87403"/>
+        <element xsi:type="archimate:Requirement" name="POD02 Řízený katalog veličin" id="id-e2e524fe29b44b5a876d003202c755ea">
+          <documentation>Nová veličina musí být přidávána rozšířením centrálního katalogu veličin a jednotek, nikoli zavedením ad hoc názvu v datech.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="POD03 Rozšiřitelná integrace zařízení" id="id-499b68fe5709479b8f43a25eed094863">
+          <documentation>Napojení nového zařízení musí být možné bez změny významu stávajících veličin a bez porušení kompatibility publikovaných dat.</documentation>
+        </element>
+      </folder>
     </folder>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-c6289f004e224b2f9667e260d79d8922" type="implementation_migration"/>
@@ -255,6 +265,15 @@
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-b51aaca0ff1845c5a1db04f5a8ae72e4" archimateElement="id-a1aa64a70119473dbc6e513ad63caf3e">
         <bounds x="229" y="984" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-9c5ea92af283453d80940b8a95aac44a" archimateElement="id-869752dcc1244490b8123676afe87403">
+        <bounds x="84" y="1068" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-422539bd82c641749ad292b13cf9ffb7" archimateElement="id-e2e524fe29b44b5a876d003202c755ea">
+        <bounds x="249" y="1068" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-3d9350b0a7e540beb6c41e5f0d239237" archimateElement="id-499b68fe5709479b8f43a25eed094863">
+        <bounds x="413" y="1068" width="120" height="55"/>
       </child>
     </element>
   </folder>
