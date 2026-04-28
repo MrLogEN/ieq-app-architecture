@@ -86,6 +86,31 @@
         <documentation>Systém eviduje výhradně faktory IEQ měřitelné senzoricky nebo jednoznačně evidovatelné; subjektivní veličiny jsou mimo rozsah.</documentation>
       </element>
     </folder>
+    <folder name="Requirements" id="id-eb5651c0da094ef6a9932a88c9eb2df8">
+      <folder name="Functional" id="id-26474508626c424fbdb62c4746b2541c">
+        <element xsi:type="archimate:Requirement" name="F01 Kompletní veličiny IEQ" id="id-29e96262ecf14c1c9166a2b81ce95cf5">
+          <documentation>Systém musí evidovat a publikovat minimálně data veličin CO₂, PM₂.₅, PM₁₀, TVOC, teploty, relativní vlhkosti, rychlosti proudění vzduchu, osvětlenosti a hladiny akustického tlaku; je-li měření dostupné, také CCT, NO₂, SO₂, CO a O₃.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="F02 Evidence měřicích bodů" id="id-4d3b3c3e5563498ebca24b807659e2ce">
+          <documentation>Systém musí evidovat každý měřicí bod jako samostatný zdroj dat s jednoznačným identifikátorem, polohou a základním kontextem umístění.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="F03 Zpřístupnění dat ke čtení" id="id-f118dac45ec4455f9af2c86885ea3fa1">
+          <documentation>Systém musí zpřístupňovat aktuální i historická data pro strojové čtení a opakované použití.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="F04 Mapová vizualizace dat" id="id-0184c17344e94b73b050d649a2bf689e">
+          <documentation>Systém musí zobrazovat měřicí body a jejich aktuální hodnoty v interaktivní mapě.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="F05 Filtrování dat" id="id-f8913fe1599944408accde152824a656">
+          <documentation>Systém musí umožnit filtrování dat podle veličiny, senzoru a časového období.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="F06 Historie měření" id="id-b41506c2c63f455ba40618d40b3a7050">
+          <documentation>Systém musí zobrazovat historický průběh měření vybraného bodu nebo veličiny v grafické podobě.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="F07 Evidence metadat senzoru" id="id-99b2a7c769684ebda01740708bdbae0c">
+          <documentation>Systém musí u měřicího bodu zveřejňovat model senzoru, podporované veličiny a dostupné údaje o přesnosti nebo charakteru měření.</documentation>
+        </element>
+      </folder>
+    </folder>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-c6289f004e224b2f9667e260d79d8922" type="implementation_migration"/>
   <folder name="Other" id="id-de17f651628741529b4864772f3307bc" type="other"/>
@@ -160,6 +185,27 @@
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-d92d84dd0b484a8f92ba177eefa8a681" archimateElement="id-e12266114b6f42658babfa28289b4dca">
         <bounds x="744" y="624" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-f2fdb40c4ed44087bf9abe7fc2d24105" archimateElement="id-29e96262ecf14c1c9166a2b81ce95cf5">
+        <bounds x="85" y="708" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-39424c10a9d145ab9adf95332e3c2970" archimateElement="id-4d3b3c3e5563498ebca24b807659e2ce">
+        <bounds x="216" y="708" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-2edb3412e9b945efa7ed457c1ef0f0cf" archimateElement="id-f118dac45ec4455f9af2c86885ea3fa1">
+        <bounds x="348" y="708" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-5cc5f02a69004ffeb7a1e91206b5c12b" archimateElement="id-0184c17344e94b73b050d649a2bf689e">
+        <bounds x="480" y="708" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-f6f18500afdb4e58a8202747826e1bee" archimateElement="id-f8913fe1599944408accde152824a656">
+        <bounds x="612" y="708" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-f1069f24b1e74d288dd3354947c40432" archimateElement="id-99b2a7c769684ebda01740708bdbae0c">
+        <bounds x="876" y="708" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-91944d9fbd4748438fcbd3a8631313c9" archimateElement="id-b41506c2c63f455ba40618d40b3a7050">
+        <bounds x="744" y="708" width="120" height="55"/>
       </child>
     </element>
   </folder>
