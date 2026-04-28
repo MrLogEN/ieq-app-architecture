@@ -120,6 +120,16 @@
           <documentation>Primární uživatelské rozhraní musí být plně použitelné v běžném moderním webovém prohlížeči bez instalace specializovaného klienta.</documentation>
         </element>
       </folder>
+      <folder name="Reliability" id="id-82a434a9dc6945449a41b3c87869deaa">
+        <documentation>Stejné měření musí být v API i archivech vedeno pod shodným identifikátorem bodu, názvem veličiny, jednotkou a časovým údajem.</documentation>
+        <element xsi:type="archimate:Requirement" name="SPO01 Nezveřejňovat neúplné záznamy" id="id-c9e8354629044535895979697ac84c3d">
+          <documentation>Záznam měření nesmí být zveřejněn, pokud chybí identifikátor měřicího bodu, čas měření, veličina, hodnota nebo vazba na polohu.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="SPO02 Konzistence napříč výstupy" id="id-f702d69aa25f4f17aa909456087315a2"/>
+        <element xsi:type="archimate:Requirement" name="SPO03 Obnovitelné zálohy dat" id="id-b938323fea6f4f9b9448f181cdc0515c">
+          <documentation>Každá publikovaná verze archivu a aktuální stav databáze musí mít samostatnou obnovitelnou zálohu, aby ztráta pracovní kopie neznamenala ztrátu dat.</documentation>
+        </element>
+      </folder>
     </folder>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-c6289f004e224b2f9667e260d79d8922" type="implementation_migration"/>
@@ -222,6 +232,15 @@
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-cdd652899ab14548958c625912a0c3eb" archimateElement="id-c3d5f9a8494b49dba52bb9a2857921ed">
         <bounds x="240" y="804" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-95fdc76dc74844e296d6503c4f8ba572" archimateElement="id-c9e8354629044535895979697ac84c3d">
+        <bounds x="85" y="888" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-6aacab9f35384b1cba89fcfa84687eec" archimateElement="id-f702d69aa25f4f17aa909456087315a2">
+        <bounds x="240" y="888" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-270971fef3964720a1a7a2aedfbaf2c9" archimateElement="id-b938323fea6f4f9b9448f181cdc0515c">
+        <bounds x="384" y="888" width="120" height="55"/>
       </child>
     </element>
   </folder>
