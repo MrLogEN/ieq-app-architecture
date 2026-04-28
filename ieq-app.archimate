@@ -50,6 +50,17 @@
         <documentation>Projekt není orgánem veřejné moci, takže registrace v NKOD a plná implementace DCAT-AP-CZ jsou nerealizovatelné.</documentation>
       </element>
     </folder>
+    <folder name="Goals" id="id-a88d27f408814857a0b9f6d8a6e8b484">
+      <element xsi:type="archimate:Goal" name="Zpřístupnit IEQ data jako otevřená data" id="id-bbe48089735c4b458c05bf61634f5a2d">
+        <documentation>Naměřená data publikovat veřejně v otevřených formátech pod otevřenou licencí, aby je mohl kdokoliv volně číst a znovu použít.</documentation>
+      </element>
+      <element xsi:type="archimate:Goal" name="Zajistit interoperabilitu s různými senzory" id="id-ee7fe8ab70f140d988d5702167b1541e">
+        <documentation>Umožnit napojení libovolného typu senzoru bez závislosti na konkrétním výrobci nebo protokolu.</documentation>
+      </element>
+      <element xsi:type="archimate:Goal" name="Soulad s evropskými standardy otevřených dat" id="id-025fc793b7f34570a2b07eb8ce87b10b">
+        <documentation>Metadatový model, formáty a licence musí odpovídat specifikaci DCAT-AP 3.0 a relevantním OFN.</documentation>
+      </element>
+    </folder>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-c6289f004e224b2f9667e260d79d8922" type="implementation_migration"/>
   <folder name="Other" id="id-de17f651628741529b4864772f3307bc" type="other"/>
@@ -94,6 +105,15 @@
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-e38de82ba4c342b99230eaeea5111673" archimateElement="id-b9e20240f2154bf0a1b3e6d05fd012d6">
         <bounds x="660" y="353" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-f60ff58756cc47f198aa80dd95a7f959" archimateElement="id-bbe48089735c4b458c05bf61634f5a2d">
+        <bounds x="72" y="456" width="145" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-17e425a1cfb0489b9c8d8cd01185f346" archimateElement="id-ee7fe8ab70f140d988d5702167b1541e">
+        <bounds x="243" y="446" width="158" height="65"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-faa8b5f669734823897de2aec549c523" archimateElement="id-025fc793b7f34570a2b07eb8ce87b10b">
+        <bounds x="444" y="446" width="169" height="60"/>
       </child>
     </element>
   </folder>
