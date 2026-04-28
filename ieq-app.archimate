@@ -5,12 +5,66 @@
   <folder name="Application" id="id-7e4ec267d836411799b6194fc50401c3" type="application"/>
   <folder name="Technology &amp; Physical" id="id-719df6b698bc43f6bdfdd46e27a7ed3b" type="technology"/>
   <folder name="Motivation" id="id-d6f3dce43fb84b15ac2d1f314c0c87bc" type="motivation">
-    <element xsi:type="archimate:Requirement" name="Use open format" id="id-1f153f36beb042f9a763d4bdfe7de70b"/>
+    <element xsi:type="archimate:Stakeholder" name="Obyvatel budovy" id="id-4ab5edefc1804e00b9673f516752ef49">
+      <documentation>Osoba trávící čas v monitorovaném prostoru; zájem: znát aktuální a historický stav kvality vnitřního prostředí.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Výzkumný pracovník" id="id-7631466ffb364d098cc8aa85f6514e2e">
+      <documentation>Akademik nebo vědec využívající otevřená IEQ data pro výzkum vlivu prostředí na zdraví a produktivitu.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Správce budovy" id="id-75ccbd691e5a4b1eb4da257dd0ecaa12">
+      <documentation>Osoba zodpovědná za provoz a údržbu budovy; zájem: monitoring prostředí a sledování historických trendů IEQ.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Vývojář třetí strany" id="id-f9c1b143bee74dbf8751dcbc7ac5cbce">
+      <documentation>Vývojář integrující se přes API; zájem: stabilní, verzované a zdokumentované rozhraní umožňující spolehlivou integraci.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Výrobce HVAC" id="id-2dad762adf7c48029fe5100e9890e475">
+      <documentation>Výrobce topných, ventilačních a klimatizačních systémů; zájem: reálná data pro vývoj a optimalizaci produktů.</documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Dopad IEQ na zdraví a produktivitu" id="id-637200b0ec7a432bb2861adf890af35b">
+      <documentation>Znečištění vnitřního ovzduší přispívá k předčasným úmrtím a snižuje pracovní výkonnost; motivuje ke sběru a sdílení IEQ dat.</documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Nedostupnost standardizovaných otevřených IEQ dat" id="id-757962516f9243c1b876ba623579a580">
+      <documentation>V České republice chybí veřejná, strojově čitelná a standardizovaná datová platforma pro IEQ umožňující opakované použití.</documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Fragmentovanost trhu IoT senzorů" id="id-f69b3e0d367d4ed5924171f71fa2d7c7">
+      <documentation>Různí výrobci používají nekompatibilní protokoly a datové formáty; bez jednotného rozhraní je integrace senzorů nákladná.</documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Trend otevřených dat" id="id-4533d015a3ab45f783bcefc0dfdeeca8">
+      <documentation>Evropská (EU Open Data Directive) a česká legislativa prosazují publikaci dat jako otevřených a strojově čitelných.</documentation>
+    </element>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-c6289f004e224b2f9667e260d79d8922" type="implementation_migration"/>
   <folder name="Other" id="id-de17f651628741529b4864772f3307bc" type="other"/>
   <folder name="Relations" id="id-5f5b162060bc429d9ecae60e389d5d0b" type="relations"/>
   <folder name="Views" id="id-89a02234429c407dbc3a8deae555a8da" type="diagrams">
-    <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-1ca1793e4b0f4f5ab13ef09d2e3313fa"/>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-1ca1793e4b0f4f5ab13ef09d2e3313fa">
+      <child xsi:type="archimate:DiagramObject" id="id-848bc6c2cde045c79e5fc64af41a01ae" archimateElement="id-4ab5edefc1804e00b9673f516752ef49">
+        <bounds x="96" y="132" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-7b60a05bc09e4c1aaec4c289b5e328b9" archimateElement="id-7631466ffb364d098cc8aa85f6514e2e">
+        <bounds x="252" y="132" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-444ab9065f51468ea5d49fb4d995c218" archimateElement="id-75ccbd691e5a4b1eb4da257dd0ecaa12">
+        <bounds x="408" y="132" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-7f5ea4aff26a40829e845b8c7cc39e19" archimateElement="id-f9c1b143bee74dbf8751dcbc7ac5cbce">
+        <bounds x="564" y="132" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-6f36a75f8d9a4c46a0c605e7da21c15f" archimateElement="id-2dad762adf7c48029fe5100e9890e475">
+        <bounds x="708" y="132" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-e88cbb20bdbe455fba2eb1f3ef9b5c13" archimateElement="id-637200b0ec7a432bb2861adf890af35b">
+        <bounds x="96" y="240" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-adabca8714e94addba16a8180ceff995" archimateElement="id-757962516f9243c1b876ba623579a580">
+        <bounds x="240" y="232" width="163" height="72"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-864f8e1fde69499c976094f77e185635" archimateElement="id-f69b3e0d367d4ed5924171f71fa2d7c7">
+        <bounds x="432" y="240" width="150" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-fdff2e763b1c45239e45b50670e4197d" archimateElement="id-4533d015a3ab45f783bcefc0dfdeeca8">
+        <bounds x="600" y="240" width="120" height="55"/>
+      </child>
+    </element>
   </folder>
 </archimate:model>
