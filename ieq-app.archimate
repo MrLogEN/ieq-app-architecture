@@ -186,6 +186,20 @@
           <documentation>Každý publikovaný JSON-LD kontext musí mít stabilní verzované IRI; nekompatibilní změna významu termínů vyžaduje novou verzi kontextu.</documentation>
         </element>
       </folder>
+      <folder name="Documentaition" id="id-492d01cd762249018499304b01812b63">
+        <element xsi:type="archimate:Requirement" name="DOK01 HTML dokumentace rozhraní" id="id-ae2c3dc0c1e545dc90c72e27ecae7368">
+          <documentation>K API, archivům a datasetům musí existovat veřejně dostupná HTML dokumentace popisující účel, způsob použití, verzi a základní parametry.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="DOK02 Popis datového modelu" id="id-8365ffccab3d453aace46ca1b4296061">
+          <documentation>Dokumentace musí popisovat význam polí, jednotky, datové typy a vazbu na formální schémata, metadata a JSON-LD kontexty.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="DOK03 Dokumentace senzorů" id="id-1adbd67802db4f60b060a59058fc51b7">
+          <documentation>Dokumentace musí uvádět používané senzory nebo typy zařízení, jejich měřené veličiny a dostupné údaje o přesnosti.</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" name="DOK04 Dokumentace umístění čidel" id="id-cd09bbb8e46c4244949854b0eccd1c85">
+          <documentation>Pokud jsou údaje dostupné, dokumentace musí popisovat umístění čidel, zejména výšku, orientaci a další okolnosti ovlivňující interpretaci měření.</documentation>
+        </element>
+      </folder>
     </folder>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-c6289f004e224b2f9667e260d79d8922" type="implementation_migration"/>
@@ -348,6 +362,18 @@
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-ed6f0a2ddf7a483b8b1dfb128d28c9f1" archimateElement="id-4c0b64be36844494a995531a78a30d5c">
         <bounds x="1176" y="1248" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-571d25c8e58545388df1b8bb0a54f8ec" archimateElement="id-ae2c3dc0c1e545dc90c72e27ecae7368">
+        <bounds x="84" y="1332" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-b3964d8284a04522945396dc5fde72ae" archimateElement="id-8365ffccab3d453aace46ca1b4296061">
+        <bounds x="248" y="1332" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-f05deec828be4615a5a20a149631901a" archimateElement="id-1adbd67802db4f60b060a59058fc51b7">
+        <bounds x="412" y="1332" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-72007515e2e249cba14af16dd1870732" archimateElement="id-cd09bbb8e46c4244949854b0eccd1c85">
+        <bounds x="576" y="1332" width="120" height="55"/>
       </child>
       <documentation>Publikovaná data musí být dostupná v otevřeném a strojově čitelném formátu; preferován je JSON-LD, alternativně CSV v kódování UTF-8. Proprietární formáty se nepoužijí.</documentation>
     </element>
